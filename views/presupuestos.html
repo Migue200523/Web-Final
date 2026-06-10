@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagenes/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.10/glider.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Movieshop - Presupuesto</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="../index.html" class="navigation">Inicio</a></li>
+            <li><a href="./productos.html" class="navigation">Productos</a></li>
+            <li><a href="../index.html"><img src="../imagenes/logotipo.png" alt="logo" width="2000" height="2000"></a></li>
+            <li><a href="./presupuestos.html" class="navigation">Presupuesto</a></li>
+            <li><a href="./contacto.html" class="navigation">Contacto</a></li>
+        </ul>
+    </nav>
+    <h1>Realice su presupuesto</h1>
+    <form id="form">
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <div class="contenedor_datos">
+                <div class="nombres">
+                    <label><i class="fa-regular fa-address-card"></i> Nombres: </label>
+                    <input type="text" id="nombres" placeholder="Nombres" minlength="0" maxlength="15" required>
+                    <span class="error" id="nombresError"></span>
+                </div>
+                <div class="apellidos">
+                    <label><i class="fa-regular fa-address-card"></i> Apellidos: </label>
+                    <input type="text" id="apellidos" placeholder="Apellidos" minlength="0" maxlength="40" required>
+                    <span class="error" id="apellidosError"></span>
+                </div>
+                <div class="movil">
+                    <label><i class="fa-duotone fa-solid fa-phone"></i> Movil:</label>
+                    <input type="tel" id="movil" placeholder="Numero de Movil" minlength="0" maxlength="9" required>
+                    <span class="error" id="movilError"></span>
+                </div>
+                <div class="correo">
+                    <label><i class="fa-solid fa-envelope"></i> Correo Electronico:</label>
+                    <input type="email" id="correo" placeholder="Correo Electronico" required>
+                    <span class="error" id="correoError"></span>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Presupuesto</legend>
+            <div class="contenedor_presupuesto">
+                <div class="producto">
+                    <label>Escoja la Calidad de su Pelicula:</label>
+                    <select id="opciones">
+                        <option value="0">Seleccionar</option>
+                        <option value="50">8K (50€)</option>
+                        <option value="20">4K (20€)</option>
+                        <option value="15">QHD (15€)</option>
+                        <option value="10"> FHD (10€)</option>
+                        <option value="5">HD (5€)</option>
+                    </select>
+                </div>
+                <div class="entrega">
+                    <label>Descuento % segun dias seleccionado</label>
+                    <input type="number" id="dias" min="0" max="20" placeholder="Dias" required>
+                </div>
+                <div class="extras">
+                    <label>
+                        <input type="checkbox" class="extra" value="10">
+                        10€ Caratula Personalizada
+                    </label>
+                </div>
+                <div class="extras">
+                    <label>
+                        <input type="checkbox" class="extra" value="5">
+                        5€ Caratula Plastica
+                    </label>
+                </div>
+                <div class="extras">   
+                    <label>
+                        <input type="checkbox" class="extra" value="10">
+                        10€ DVD Virgen 
+                    </label><br>
+                </div>
+                <div class="resultado">
+                    <p>Total sin descuento: <span id="subtotal">0.00 €</span></p>
+                    <p class="precio">
+                        Total final: <span id="total">0.00 €</span>
+                    </p>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Terminos y Condiciones</legend>
+            <div class="contenedor_condiciones">
+                <div class="termino1">
+                    <input type="checkbox" required>
+                    <label id="politica1">He leido las politicas de privacidad </label>
+                </div>
+                <div class="termino2">
+                    <input type="checkbox" required>
+                    <label id="politica2">Acepto los terminos y condiciones</label>
+                </div>
+            </div>
+        </fieldset>
+        <button>Enviar Formulario</button>
+    </form>
+    <footer>
+        <div class="info">
+            <div class="movil">
+                <p>Telefono de Contacto:<br> +34 65457767</p> 
+            </div>
+            <div class="mail">
+                <p>Email:<br> infopedido@gmail.com</p>
+            </div>
+            <div class="adress">
+                <p>Dirección:<br>Madrid, España</p>
+            </div>
+        </div>
+        <div class="rrss">
+            <a target="_blank" href="https://web.whatsapp.com/"><img src="../Imagenes/Whatsapp.png" alt="Whatsapp" width="509" height="512"></a>
+            <a target="_blank" href="https://www.facebook.com/?locale=es_ES"><img src="../Imagenes/Facebook.png" alt="Facebook" width="512" height="512"></a>
+            <a target="_blank" href="https://www.instagram.com/"><img src="../Imagenes/Instagram.png" alt="Instagram" width="512" height="512"></a>
+            <a target="_blank" href="https://x.com/?lang=es"><img src="../Imagenes/twitter.png" alt="twitter" width="512" height="512"></a>
+            <a target="_blank" href="https://web.telegram.org/"><img src="../Imagenes/telegram.png" alt="Telegram" width="512" height="512"></a>
+            <a target="_blank" href="https://www.tiktok.com/es/"><img src="../Imagenes/Tiktok.png" alt="Tiktok" width="452" height="512"></a>
+        </div>
+        <hr>
+        <cite>Creado por Miguel Arevalo / Todos los derechos reservado</cite>
+        <hr>
+        <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.10/glider.min.js"></script>
+        <script src="https://kit.fontawesome.com/9f88a731ff.js" crossorigin="anonymous"></script>
+        <script src="../js/presupuesto.js" defer></script>
+    </footer>
+</body>
+</html>

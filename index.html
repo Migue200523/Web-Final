@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./imagenes/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.10/glider.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Movieshop - Inicio</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="./index.html" class="navigation">Inicio</a></li>
+            <li><a href="./views/productos.html" class="navigation">Productos</a></li>
+            <li><a href="./index.html"><img src="./imagenes/logotipo.png" alt="logo" width="2000" height="2000"></a></li>
+            <li><a href="./views/presupuestos.html" class="navigation">Presupuesto</a></li>
+            <li><a href="./views/contacto.html" class="navigation">Contacto</a></li>
+        </ul>
+    </nav>
+    <h1 class="text-center">🎬 Películas en Estrenos 🎬</h1>
+    <div class="contenedor">
+        <div id="carousel" class="carousel">
+            <div class="carousel__contenedor">
+                <button aria-label="Anterior" class="carousel__anterior">
+                    <i class="fa-solid fa-circle-chevron-left"></i>
+                </button>
+                <div class="carousel__lista">
+                    <div class="carousel__elemento">
+                        <img src="./imagenes/estreno1.jpg" alt="Logotipo">
+                        <p>BACKROOMS</p>
+                    </div>
+                    <div class="carousel__elemento">
+                        <img src="./imagenes/estreno2.jpg" alt="Motocicleta">
+                        <p>HE-MAN Y LOS MASTERS DEL UNIVERSO</p>
+                    </div>
+                    <div class="carousel__elemento">
+                        <img src="./imagenes/estreno3.jpg" alt="Bicicleta">
+                        <p>SCARY MOVIE</p>
+                    </div>
+                    <div class="carousel__elemento">
+                        <img src="./imagenes/estreno4.jpg" alt="Mantenimiento">
+                        <p>REBUILDING</p>
+                    </div>
+                    <div class="carousel__elemento">
+                        <img src="./imagenes/estreno5.jpg" alt="Paisaje1">
+                        <p>RECEN POR MI</p>
+                    </div>
+                    <div class="carousel__elemento">
+                        <img src="./imagenes/estreno6.jpg" alt="Paisaje2">
+                        <p>ESTE CUERPO MIO</p>
+                    </div>
+                    <div class="carousel__elemento">
+                        <img src="./imagenes/estreno7.jpg" alt="Paisaje2">
+                        <p>CADA DIA NACE UN LISTO</p>
+                    </div>
+                    <div class="carousel__elemento">
+                        <img src="./imagenes/estreno8.jpg" alt="Paisaje2">
+                        <p>UNA PELICULA DE MIEDO</p>
+                    </div>
+                    <div class="carousel__elemento">
+                        <img src="./imagenes/estreno9.jpg" alt="Paisaje2">
+                        <p>ASESINATO EN LA 3ª PLANTA</p>
+                    </div>
+                    <div class="carousel__elemento">
+                        <img src="./imagenes/estreno10.jpg" alt="Paisaje2">
+                        <p>TODO LO QUE NUNCA FUIMOS</p>
+                    </div>
+                </div>
+                <button aria-label="Siguiente" class="carousel__siguiente">
+                    <i class="fa-solid fa-circle-chevron-right"></i>
+                </button>
+            </div>
+            <div role="tablist" class="carousel__indicadores"></div>
+        </div>
+    </div>
+    <div id="contendor-api">
+        <div class="container-productos">
+            <h2 class="text-center">🎬 Películas Destacadas 🎬</h2>
+            <div class="row" id="movie-container"></div>
+        </div>
+    </div>
+    <div class="descuento">
+        <h2 class="text-center"><i class="fa-solid fa-angles-down fa-bounce"></i>Pincha en la imagen para descuentos<i class="fa-solid fa-angles-down fa-bounce"></i></h2>
+        <a href="./views/presupuestos.html" target="_blank"><img src="./imagenes/descuento.jpg" alt="descuento"></a>
+    </div>
+    <footer>
+        <div class="info">
+            <div class="movil">
+                <p>Telefono de Contacto:<br> +34 65457767</p> 
+            </div>
+            <div class="mail">
+                <p>Email:<br> infopedido@gmail.com</p>
+            </div>
+            <div class="adress">
+                <p>Dirección:<br>Madrid, España</p>
+            </div>
+        </div>
+        <div class="rrss">
+            <a target="_blank" href="https://web.whatsapp.com/"><img src="./Imagenes/Whatsapp.png" alt="Whatsapp" width="509" height="512"></a>
+            <a target="_blank" href="https://www.facebook.com/?locale=es_ES"><img src="./Imagenes/Facebook.png" alt="Facebook" width="512" height="512"></a>
+            <a target="_blank" href="https://www.instagram.com/"><img src="./Imagenes/Instagram.png" alt="Instagram" width="512" height="512"></a>
+            <a target="_blank" href="https://x.com/?lang=es"><img src="./Imagenes/twitter.png" alt="twitter" width="512" height="512"></a>
+            <a target="_blank" href="https://web.telegram.org/"><img src="./Imagenes/telegram.png" alt="Telegram" width="512" height="512"></a>
+            <a target="_blank" href="https://www.tiktok.com/es/"><img src="./Imagenes/Tiktok.png" alt="Tiktok" width="452" height="512"></a>
+        </div>
+        <hr>
+            <cite>Creado por Miguel Arevalo / Todos los derechos reservado</cite>
+        <hr>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.10/glider.min.js"></script>
+    <script src="https://kit.fontawesome.com/9f88a731ff.js" crossorigin="anonymous"></script>
+    <script src="./js/index.js" defer></script>
+</body>
+</html>
