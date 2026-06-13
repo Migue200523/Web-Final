@@ -58,7 +58,6 @@ li a{
     font-size: 20px;
     font-weight:bold;
     height: 100%;
-    width: auto;
     transition: 0.3s;
     margin: 15px;
 }
@@ -66,7 +65,7 @@ li a img{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: auto;
+    width: 150px;
     height: 50px;
     border-radius: 10px;
 }
@@ -86,13 +85,21 @@ li a:not(.navigation):hover{
 	body {
 		padding: 40px 0px;
 	}
-	nav {
+    nav{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top:10px;
+        left: 0;
+    }
+	/*nav {
         display: flex;
         flex-direction:row;
         flex-wrap: wrap;
         right: 0;
         width: auto;
-    }
+    }*/
 	li a{
 		display: flex;
         flex-direction: row;
