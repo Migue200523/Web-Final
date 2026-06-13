@@ -58,6 +58,7 @@ li a{
     font-size: 20px;
     font-weight:bold;
     height: 100%;
+    width: auto;
     transition: 0.3s;
     margin: 15px;
 }
