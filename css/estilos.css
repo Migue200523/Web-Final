@@ -75,6 +75,13 @@ h1{
 	.contenido-principal > * {
 		width: 100%;
 	}
+    #form{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        width: 250px;
+    }
 }
 
 /*------------------BARRA DE NAVEGACION------------------*/
