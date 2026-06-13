@@ -7,8 +7,8 @@
     padding: 0;
 }
 body {
-	display: flex;
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -19,29 +19,35 @@ body {
     padding-top: 80px;
 }
 h1{
+    display: flexbox;
     text-align: center;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace ;
     font-size: 60px;
     margin: 0;
     padding: 20px;
+    width: 100%;
 }
 
 /*------------------BARRA DE NAVEGACION------------------*/
 nav{
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     position: fixed;
     top: 10px;
     z-index: 1000;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background:#787978;
-    padding: 15px 20px;
     border-radius: 5%;
     border: 2px solid #fff;
     height: 8%;
 }
 ul{
     display:flex;
-    gap:20px;
+    flex-direction: row;
+    flex-wrap: wrap;
     list-style:none;
     margin:0;
     padding:0;
@@ -84,15 +90,26 @@ li a:not(.navigation):hover{
 @media screen and (max-width: 768px) {
 	body {
 		padding: 40px 0px;
+        display:flexbox;
 	}
     nav{
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: auto;
+        position: fixed;
         top:10px;
         right: 0;
         left: 0;
+        height: 23%;
+    }
+    h1{
+        position: relative;
+        top: 80px;
+    }
+    .mapa{
+        position: relative;
+        top: 50px;
     }
 	/*nav {
         display: flex;
@@ -269,12 +286,9 @@ img{
     text-align: center;
     width: 100%;
 }
-h1{
-    justify-content: center;
-    font-family: 'Courier New', Courier, monospace ;
-}
 h2{
     justify-content: center;
+    text-align: center;
     margin: 50px 5px 0px;
     font-family: 'Courier New', Courier, monospace ;
     font-size: 40px;
@@ -440,12 +454,10 @@ h2{
 /*---------------------- PAGINA DE PRODUCTOS (GALERIA) --------------------------*/
 
 .contenedorGaleria {
-	width: 100%;
-	max-width: 1000px;
-	margin: 40px auto 100px auto;
+	width: 95%;
+	margin: 40px;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
-	gap: 40px;
 }
 .contenedorGaleria .pelicula {
 	text-align: center;
@@ -480,6 +492,7 @@ h2{
 	background: #100a1f;
 	width: 100%;
 	display: flex;
+    flex-direction: row;
 	justify-content: center;
 	gap: 20px;
 	padding: 10px;
@@ -506,8 +519,8 @@ h2{
 
 /*----------------------PAGINA DE PRESUPUESTO--------------------------*/
 form{
-    display: flexbox;
-    flex-direction:row;
+    display:block;
+    flex-direction:column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
