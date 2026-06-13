@@ -1,2 +1,3 @@
 # Web-Final
-Prueba HTML, CSS y JS
+GitHub: https://github.com/Migue200523/Web-Final
+Hosting: https://migue200523.github.io/Web-Final/
