@@ -50,6 +50,9 @@ ul{
     align-items: center;
 }
 li a{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     color:white;
     text-decoration:none;
     font-size: 20px;
@@ -87,7 +90,7 @@ li a:not(.navigation):hover{
         flex-direction:row;
         flex-wrap: wrap;
         right: 0;
-        width: 100%;
+        width: auto;
     }
 	li a{
 		display: flex;
