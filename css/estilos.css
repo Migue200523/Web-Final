@@ -28,6 +28,54 @@ h1{
     padding: 20px;
     width: 100%;
 }
+@media screen and (max-width: 768px) {
+	body {
+		padding: 40px 0px;
+        display:flexbox;
+	}
+    nav{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: auto;
+        position: fixed;
+        top:10px;
+        right: 0;
+        left: 0;
+        height: auto;
+    }
+    h1{
+        position: relative;
+        top: 80px;
+        padding: 80px;
+    }
+    .mapa{
+        position:relative;
+        top: 80px;
+    }
+    footer{
+        margin-top: 20px;
+        width: 100%;
+    }
+	li a{
+		display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+	}
+	body {
+		padding: 40px 0;
+	}
+
+	.contenido-principal {
+		flex-direction: column;
+	}
+
+	.contenido-principal > * {
+		width: 100%;
+	}
+}
 
 /*------------------BARRA DE NAVEGACION------------------*/
 nav{
@@ -42,7 +90,7 @@ nav{
     background:#787978;
     border-radius: 5%;
     border: 2px solid #fff;
-    height: 8%;
+    height: auto;
 }
 ul{
     display:flex;
@@ -87,46 +135,6 @@ li a:not(.navigation):hover{
     padding: 0;
     opacity: 80%;
 }
-@media screen and (max-width: 768px) {
-	body {
-		padding: 40px 0px;
-        display:flexbox;
-	}
-    nav{
-        display:flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: auto;
-        position: fixed;
-        top:10px;
-        right: 0;
-        left: 0;
-        height: 23%;
-    }
-    h1{
-        position: relative;
-        top: 80px;
-    }
-    .mapa{
-        position: relative;
-        top: 50px;
-    }
-	/*nav {
-        display: flex;
-        flex-direction:row;
-        flex-wrap: wrap;
-        right: 0;
-        width: auto;
-    }*/
-	li a{
-		display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-	}
-}
-
 /*----------------------FOOTER------------------------*/
 footer{
     display: flexbox;
@@ -171,7 +179,6 @@ footer{
     font-size: 20px;
     font-weight:bold;
     height: 100%;
-
 }
 hr{
     display: flex;
@@ -259,20 +266,6 @@ img{
 .carousel__indicadores .glider-dot:active{
     opacity: 1;
 }
-@media screen and (max-width: 768px) {
-	body {
-		padding: 40px 0;
-	}
-
-	.contenido-principal {
-		flex-direction: column;
-	}
-
-	.contenido-principal > * {
-		width: 100%;
-	}
-}
-
 /* ********** INICIO - API ********** */
 #contendor-api{
     justify-content: center;
@@ -452,7 +445,6 @@ h2{
 }
 
 /*---------------------- PAGINA DE PRODUCTOS (GALERIA) --------------------------*/
-
 .contenedorGaleria {
 	width: 95%;
 	margin: 40px;
@@ -525,7 +517,7 @@ form{
     justify-content: center;
     align-items: center;
     font-family: 'Courier New', Courier, monospace;
-    width: 40%;
+    width: 32%;
     background: #787978;
     border-radius: 5px;
     margin: 10px;
@@ -629,7 +621,6 @@ button{
 .valido{
     border-color: green;
 }
-
 .invalido{
     border-color: red;
 }
