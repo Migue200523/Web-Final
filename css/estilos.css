@@ -84,11 +84,15 @@ li a:not(.navigation):hover{
 	}
 	nav {
         display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
         right: 0;
-        width: auto;
-}
+        width: 100%;
+    }
 	li a{
 		display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
 	}
